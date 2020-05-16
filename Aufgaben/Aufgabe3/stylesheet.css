@@ -111,7 +111,7 @@ li a.activepage{
 
 .instagram{
     position: absolute;
-    bottom: 240px;
+    bottom: 200px;
     left: 42%;
     z-index: 9998;
 }
@@ -122,7 +122,7 @@ li a.activepage{
 
 .facebook{
     position: absolute;
-    bottom: 240px;
+    bottom: 200px;
     left: 45%;
     z-index: 9998;
 }
