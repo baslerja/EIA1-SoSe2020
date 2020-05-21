@@ -1,0 +1,54 @@
+body{
+    background-image: url(wrapperbg.png), url(bg.png);
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
+}
+
+#headline{
+    display: inline-block;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 450px;
+    color: white;
+}
+
+#text{
+    display: inline-block;
+    position: absolute;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 420px;
+    color: white;
+}
+
+img[alt=Pinguin]{
+    display: inline-block;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 320px;
+}
+
+img[alt=Muschel]{
+    display: inline-block;
+    position: absolute;
+    margin-left: -250px;
+    margin-top: 360px;
+}
