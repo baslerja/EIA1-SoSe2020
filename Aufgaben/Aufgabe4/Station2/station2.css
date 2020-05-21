@@ -1,0 +1,62 @@
+body{
+    background-image: url(wrapperbg.png), url(bg.png);
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
+}
+
+#headline{
+    display: inline-block;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 0;
+    color: white;
+}
+
+img[alt=Muschel1]{
+    display: inline-block;
+    position: absolute;
+    margin-left: -50;
+    margin-top: 200px;
+}
+
+img[alt=Muschel2]{
+    display: inline-block;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: 250px;
+}
+
+img[alt=Muschel3]{
+    display: inline-block;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 300px;
+}
+
+.shellopen{
+    opacity: 0;
+}
+
+.shell:hover{
+    opacity: 0;
+}
+
+.shellopen:hover{
+    opacity: 1;
+}
