@@ -24,19 +24,19 @@ var as18welt:number=100/gesamt18*as18;
 var au18welt:number=100/gesamt18*au18;
 
 /*Vergleich in %*/
-var eu0818p1:number=100/eu08*eu18;
-var na0818p1:number=100/na08*na18;
-var sa0818p1:number=100/sa08*sa18;
-var af0818p1:number=100/af08*af18;
-var as0818p1:number=100/as08*as18;
-var au0818p1:number=100/au08*au18;
+var eu0818p1:number=1-eu18/eu08;
+var na0818p1:number=1-na18/na08;
+var sa0818p1:number=1-sa18/sa08;
+var af0818p1:number=1-af18/af08;
+var as0818p1:number=1-as18/as08;
+var au0818p1:number=1-au18/au08;
 
-var eu0818p2:number=100-eu0818p1;
-var na0818p2:number=100-na0818p1;
-var sa0818p2:number=100-sa0818p1;
-var af0818p2:number=100-af0818p1;
-var as0818p2:number=100-as0818p1;
-var au0818p2:number=100-au0818p1;
+var eu0818p2:number=100*eu0818p1;
+var na0818p2:number=100*na0818p1;
+var sa0818p2:number=100*sa0818p1;
+var af0818p2:number=100*af0818p1;
+var as0818p2:number=100*as0818p1;
+var au0818p2:number=100*au0818p1;
 
 /*Vergleich in kg CO2*/
 var eu0818kg:number=eu18-eu08;
