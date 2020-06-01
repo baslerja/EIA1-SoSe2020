@@ -33,10 +33,10 @@ var au0818p1:number=1-au18/au08;
 
 var eu0818p2:number=100*eu0818p1;
 var na0818p2:number=100*na0818p1;
-var sa0818p2:number=100*sa0818p1;
-var af0818p2:number=100*af0818p1;
-var as0818p2:number=100*as0818p1;
-var au0818p2:number=100*au0818p1;
+var sa0818p2:number=100*sa0818p1*(-1);
+var af0818p2:number=100*af0818p1*(-1);
+var as0818p2:number=100*as0818p1*(-1);
+var au0818p2:number=100*au0818p1*(-1);
 
 /*Vergleich in kg CO2*/
 var eu0818kg:number=eu18-eu08;
