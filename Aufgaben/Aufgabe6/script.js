@@ -41,7 +41,7 @@ var af0818kg = dp(af18 - af08);
 var as0818kg = dp(as18 - as08);
 var au0818kg = dp(au18 - au08);
 function dp(n) {
-    return Number.parseFloat(n).toFixed(2);
+    return (n).toFixed(2);
 }
 /*Europa*/
 function europe() {
