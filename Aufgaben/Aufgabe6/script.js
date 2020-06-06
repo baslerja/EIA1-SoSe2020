@@ -66,10 +66,10 @@ console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um " + 
 console.log("2018 im Vergleich zu 2008 sind das " + eu0818kg + " kg CO2.");
 /*Nordamerika*/
 function northa() {
-    document.querySelector("#title").innerHTML = "Carbon Dioxide Emissions Northamerica";
+    document.querySelector("#title").innerHTML = "Carbon Dioxide Emissions North America";
     document.querySelector(".chart").setAttribute('style', 'height:' + na18welt + 'px');
     document.querySelector("#h2a").innerHTML = na18 + "kg CO2";
-    document.querySelector("#p1").innerHTML = "Emission absolute of Northamerica in 2018";
+    document.querySelector("#p1").innerHTML = "Emission absolute of North America in 2018";
     document.querySelector("#h2r").innerHTML = na18welt + "%";
     document.querySelector("#p2").innerHTML = "Relative to total world's emission";
     document.querySelector("#h2grp").innerHTML = na0818p2 + "%";
@@ -87,10 +87,10 @@ console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um
 console.log("2018 im Vergleich zu 2008 sind das " + na0818kg + " kg CO2.");
 /*Südamerika*/
 function southa() {
-    document.querySelector("#title").innerHTML = "Carbon Dioxide Emissions Southamerica";
+    document.querySelector("#title").innerHTML = "Carbon Dioxide Emissions South America";
     document.querySelector(".chart").setAttribute('style', 'height:' + sa18welt + 'px');
     document.querySelector("#h2a").innerHTML = sa18 + "kg CO2";
-    document.querySelector("#p1").innerHTML = "Emission absolute of Southamerica in 2018";
+    document.querySelector("#p1").innerHTML = "Emission absolute of South America in 2018";
     document.querySelector("#h2r").innerHTML = sa18welt + "%";
     document.querySelector("#p2").innerHTML = "Relative to total world's emission";
     document.querySelector("#h2grp").innerHTML = sa0818p2 + "%";
