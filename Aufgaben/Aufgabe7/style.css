@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+#button1, #button2, #button3{
+    padding: 150px 150px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 8px 8px 8px 8px;
+    border: none;
+    background-color: #668cff;
+    cursor: pointer;
+}
+
+#button4, #button5, #button6, #button7{
+    padding: 150px 150px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 8px 8px 8px 8px;
+    border: none;
+    background-color: #ff80d5;
+    cursor: pointer;
+}
+
+#button8, #button9{
+    padding: 150px 150px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 8px 8px 8px 8px;
+    border: none;
+    background-color: #ff8533;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 70%;
+}
+
+#playbutton{
+    margin: 3px 3px 3px 3px;
+    cursor: pointer;
+}
+
+#playbutton:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+}
