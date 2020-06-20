@@ -54,7 +54,7 @@ window.addEventListener('load', function () {
     function playstop(): void {
         var psbutton = document.querySelector("#play");
         if (psbutton.getAttribute("class") == "fas fa-play") {
-            psbutton.setAttribute("class", "fas fa-stop");
+            psbutton.setAttribute("class", "fas fa-pause");
             playBeats();
         } else {
             psbutton.setAttribute("class", "fas fa-play");
