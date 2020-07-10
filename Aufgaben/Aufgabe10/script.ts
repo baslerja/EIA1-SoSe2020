@@ -51,7 +51,7 @@ var counterOpenDOMElement: HTMLElement;
  * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
  * initialisiert werden
  */
-window.addEventListener("load", function(): void {
+window.addEventListener("load", function (): void {
 
     /**
      * Jetzt da der DOM verfügbar ist können die wichtigsten Elemente
@@ -102,17 +102,17 @@ function drawListToDOM(): void {
          * ein Wert einer Variablen benötigt (bspw. für die CSS Klasse oder für den ToDo-Text),
          * hier muss die Zeichenkette unterbrochen werden.
          */
-        todo.innerHTML =  "<span class='check " + todos[index].todosChecked + "'><i class='fas fa-check'></i></span>"
-                            + todos[index].todosText +
-                            "<span class='trash fas fa-trash-alt'></span>";
+        todo.innerHTML = "<span class='check " + todos[index].todosChecked + "'><i class='fas fa-check'></i></span>"
+            + todos[index].todosText +
+            "<span class='trash fas fa-trash-alt'></span>";
 
         // Zuweisen der Event-Listener für den Check- und den Trash-Button
-        todo.querySelector(".check").addEventListener("click", function(): void {
+        todo.querySelector(".check").addEventListener("click", function (): void {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
             // übergeben, damit an der entsprechenden Stelle im Array der Wert geändert werden kann.
             toggleCheckState(index);
         });
-        todo.querySelector(".trash").addEventListener("click", function(): void {
+        todo.querySelector(".trash").addEventListener("click", function (): void {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
             // übergeben, damit die entsprechende Stelle im Array gelöscht werden kann.
             deleteTodo(index);
@@ -130,11 +130,11 @@ function updateCounter(): void {
     let counterChecked: number = 0;
     let counterOpen: number = 0;
 
-    for(let i: number = 0; i < todos.length; i++){
+    for (let i: number = 0; i < todos.length; i++) {
         console.log(todos[i].todosChecked);
-        if(todos[i].todosChecked == true){
+        if (todos[i].todosChecked == true) {
             counterChecked++;
-        } else{
+        } else {
             counterOpen++;
         }
     }
@@ -160,8 +160,8 @@ function addTodo(): void {
          * der Status "unchecked", hier false, gepusht.
          */
         todos.unshift({
-        todosText: (inputDOMElement.value),
-        todosChecked: false
+            todosText: (inputDOMElement.value),
+            todosChecked: false
         });
 
         // Jetzt wird der Text aus dem Eingabefeld gelöscht
@@ -213,10 +213,47 @@ function deleteTodo(index: number): void {
      * das ToDo-Text-Array und das Checked/Unchecked-Array
      */
     todos.splice(index, 1);
-    
+
     /**
      * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
      * wird wieder getriggert
      */
     drawListToDOM();
 }
+
+declare var Artyom: any;
+
+window.addEventListener('load', function () {
+    const artyom = new Artyom();
+    artyom.addCommands({
+        indexes: ["erstelle Aufgabe *"],
+        smart: true,
+        action: function (i: any, wildcard: string): void {
+            todos.unshift({
+                todosText: wildcard,
+                todosChecked: false
+            });
+            drawListToDOM();
+        }
+    })
+
+    function startContinuousArtyom(): void {
+        artyom.fatality();
+        setTimeout(
+            function (): void {
+                artyom.initialize({
+                    lang: "de-DE",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+                }).then(function (): void {
+                    console.log("Ready");
+                });
+            },
+            200);
+
+    }
+    startContinuousArtyom();
+
+});   
